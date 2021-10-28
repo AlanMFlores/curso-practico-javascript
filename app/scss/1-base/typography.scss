@@ -1,0 +1,55 @@
+@use '../3-abstracts/variables' as *;
+@use '../3-abstracts/colors' as *;
+@use '../3-abstracts/breakpoints' as *;
+
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+    font-size: $fs-xs-mobile-main-title;
+
+    @include medium-dev {
+        font-size: $fs-med-dev-main-title;
+    }
+
+    @include x-large-dev {
+        font-size: $fs-xlarge-dev-main-title;
+    }
+
+}
+
+h3 {
+    font-size: $fs-xs-mobile-medium-title;
+
+    @include medium-dev {
+        font-size: $fs-med-dev-medium-title;
+    }
+
+    @include x-large-dev {
+        font-size: $fs-xlarge-dev-medium-title;
+    }
+}
+
+p {
+    font-size: $fs-xs-mobile-copy;
+    line-height: 1.5;
+
+    @include medium-dev {
+        font-size: $fs-med-dev-copy;
+    }
+
+    @include x-large-dev {
+        font-size: $fs-xlarge-dev-copy;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: $clr-secondary-blue;
+}

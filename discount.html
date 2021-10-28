@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="dist/css/main.css">
+    <title>Cálculo de Descuentos | Curso Práctico JavaScript</title>
+</head>
+<body>
+
+    <header class="header">
+        <img src="images/logo.png" alt="" class="header__logo">
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list--item">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="geometry.html">Geometry</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="discount.html" id="current-page">Discount</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="av-mo-med.html">Average - Mode - Median</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="salaries.html">Salaries</a>
+                </li>
+            </ul>
+
+            <ul class="nav__list-mobile">
+                <li class="nav__list-mobile--item">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="geometry.html">Geometry</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="discount.html" id="current-page">Discount</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="av-mo-med.html">Average - Mode - Median</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="salaries.html">Salaries</a>
+                </li>
+
+                <p>Designed by <span>Alan Flores</span> - Platzi 💚</p>
+
+            </ul>
+
+            
+        </nav>
+        
+        <button class="header__hamb-menu" id="hamb-menu">
+            <img src="images/hamb-menu.svg" alt="" class="hamb">
+            <img src="images/close-menu.svg" alt="" class="close">
+        </button>
+
+    </header>
+    
+    <div class="nav-overlay"></div>
+
+    <main class="main">
+
+        <h1 class="main__title">
+            Calculadora de Descuentos
+        </h1>
+
+        <p class="main__copy">
+            Indique el precio de un producto y el descuento en porcentaje que quiere aplicar.
+        </p>
+
+        <section class="discount-forms">
+    
+            <article class="forms-card">
+                <h3 class="forms-card__title">Descuento</h3>
+                <form action="">
+                    <label for="discount-amount" class="forms-card__instruction">Importe a calcular $</label>
+                    <input type="number" id="discount-amount" class="form-input" placeholder="Indicar importe">
+                    <label for="discount-percentage" class="forms-card__instruction">Descuento a aplicar %</label>
+                    <input type="number" id="discount-percentage" class="form-input" placeholder="Indicar porcentaje">
+                    <input type="button" value="Calcular Descuento" id="calc-discount" class="green-submit-btn">
+                </form>
+    
+                <div class="forms-card__result" id="dis-block-result">
+                    <p>El precio final es:</p>
+                    <p class="result" id="dis-result"></p>
+                </div>
+
+                <div class="forms-card__saving" id="dis-block-saving">
+                    <p>Estás ahorrando:</p>
+                    <p class="saving" id="dis-saving"></p>
+                </div>
+    
+            </article>
+    
+            <article class="forms-card">
+                <h3 class="forms-card__title">Descuento</h3>
+                <form action="">
+                    <label for="coupon-discount-amount" class="forms-card__instruction">Importe a calcular $</label>
+                    <input type="number" id="coupon-discount-amount" class="form-input" placeholder="Indicar importe">
+                    <label for="coupon-discount-percentage" class="forms-card__instruction">Descuento a aplicar %</label>
+                    <input type="text" id="coupon-discount-percentage" class="form-input" placeholder="Indicar código de descuento">
+                    <div class="coupons">
+                        <input type="button" class="coupons__buttons" value="10OFF" id="10-off">
+
+                        <input type="button" class="coupons__buttons" value="20OFF" id="20-off">
+
+                        <input type="button" class="coupons__buttons" value="30OFF" id="30-off">
+
+                        <input type="button" class="coupons__buttons" value="40OFF" id="40-off">
+
+                        <input type="button" class="coupons__buttons" value="50OFF" id="50-off">
+
+                        <input type="button" class="coupons__buttons" value="60OFF" id="60-off">
+
+                        <input type="button" class="coupons__buttons" value="70OFF" id="70-off">
+
+                        <input type="button" class="coupons__buttons" value="80OFF" id="80-off">
+
+                        <input type="button" class="coupons__buttons" value="90OFF" id="90-off">
+
+                        <input type="button" class="coupons__buttons" value="100OFF" id="100-off">
+                    </div>
+                    <input type="button" value="Calcular Descuento" id="calc-coupon-discount" class="green-submit-btn">
+                </form>
+    
+                <div class="forms-card__result" id="dis-co-block-result">
+                    <p>El precio final es:</p>
+                    <p class="result" id="dis-co-result">25cm</p>
+                </div>
+
+                <div class="forms-card__saving" id="dis-co-block-saving">
+                    <p>Estás ahorrando:</p>
+                    <p class="saving" id="dis-co-saving">25cm</p>
+                </div>
+    
+            </article>
+    
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Designed by <span>Alan Flores</span> - Platzi 💚</p>
+    </footer>
+
+    <script src="/app/js/animations.js"></script>
+    <script src="/app/js/discount.js"></script>
+</body>
+</html>

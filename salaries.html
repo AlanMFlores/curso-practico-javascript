@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Salarios | Curso Práctico de JavaScript</title>
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="dist/css/main.css">
+    <!-- StyleSheet -->
+
+</head>
+<body>
+
+    <header class="header">
+        <img src="images/logo.png" alt="" class="header__logo">
+
+        <nav class="nav">
+
+            <ul class="nav__list">
+                <li class="nav__list--item">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="geometry.html">Geometry</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="discount.html">Discount</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="av-mo-med.html">Average - Mode - Median</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="salaries.html" id="current-page">Salaries</a>
+                </li>
+            </ul>
+
+            <ul class="nav__list-mobile">
+                <li class="nav__list-mobile--item">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="geometry.html">Geometry</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="discount.html">Discount</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="av-mo-med.html">Average - Mode - Median</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="salaries.html" id="current-page">Salaries</a>
+                </li>
+
+                <p>Designed by <span>Alan Flores</span> - Platzi 💚</p>
+
+            </ul>
+
+            
+        </nav>
+        
+        <button class="header__hamb-menu" id="hamb-menu">
+            <img src="images/hamb-menu.svg" alt="" class="hamb">
+            <img src="images/close-menu.svg" alt="" class="close">
+        </button>
+
+    </header>
+
+    <div class="nav-overlay"></div>
+
+    <main class="main">
+        <h1 class="main__title">
+            Calculadora de Salarios
+        </h1>
+
+        <p class="main__copy">
+            Indique los salarios sobre los cuáles calcular la mediana del total o del top 10% de los salarios indicados.
+        </p>
+
+    <section class="salaries-forms">
+
+        <article class="forms-card">
+            <h3 class="forms-card__title">Mediana de Salarios</h3>
+            <form action="">
+                <label for="salaries-numbers" class="forms-card__instruction">Indique los salarios separados por coma para calcular la mediana. </label>
+                <input type="text" id="salaries-numbers" class="form-input" placeholder="Indicar salarios">
+                <input type="button" value="Calcular Mediana" id="calc-salaries" class="green-submit-btn">
+            </form>
+    
+            <div class="forms-card__result" id="sal-block-result">
+                <p>La mediana de los salarios es:</p>
+                <p class="result" id="sal-result"></p>
+            </div>
+        </article>
+    
+        <article class="forms-card">
+            <h3 class="forms-card__title">Top 10%</h3>
+            <form action="">
+                <label for="top-salaries-numbers" class="forms-card__instruction">Indique los salarios separados por coma para calcular la mediana del top 10%.   </label>
+                <input type="text" id="top-salaries-numbers" class="form-input" placeholder="Indicar salarios">
+                <input type="button" value="Calcular Mediana" id="calc-top-salaries" class="green-submit-btn">
+            </form>
+    
+            <div class="forms-card__result" id="top-sal-block-result">
+                <p>La mediana de los Top 10% de salarios es:</p>
+                <p class="result" id="top-sal-result"></p>
+            </div>
+        </article>
+
+    </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <p>Designed by <span>Alan Flores</span> - Platzi 💚</p>
+    </footer>
+
+    <script src="/app/js/animations.js"></script>
+    <script src="/app/js/analysis.js"></script>
+</body>
+</html>

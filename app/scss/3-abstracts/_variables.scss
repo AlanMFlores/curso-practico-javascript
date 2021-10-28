@@ -1,0 +1,93 @@
+/* ########## Titles & Paragraphs  ##########
+
+#
+#
+
+*/
+
+// ##### - ##### - Global Variables - ##### - ##### 
+
+$tr-anim-duration: 250ms;
+$br-general: 10px;
+
+$mt-big-separation: 40px;
+$mb-medium-separation: 30px;
+$mb-small-separation: 20px;
+$mt-button-separation: 15px;
+$mb-very-small-separation: 10px;
+
+// ##### Breakpoints Variables #####
+
+$bp-x-small-dev: 320px;
+$bp-small-dev: 375px;
+$bp-small-dev-land: 425px;
+$bp-medium-dev: 600px;
+$bp-x-medium-dev: 768px;
+$bp-large-dev: 900px;
+$bp-x-large-dev: 1440px;
+
+
+
+// ##### - ##### - x-Small Mobile Devices ##### - ##### -
+
+// ##### Fonts ##### 
+
+$fs-xs-mobile-small: 1.2rem;
+$fs-xs-mobile-copy: 1.4rem; // Copy - Buttons - Placeholders
+$fs-xs-mobile-main-title: 2.4rem;
+$fs-xs-mobile-medium-title: 1.8rem;
+$fs-xs-mobile-external-links: 1.6rem;
+
+// ##### Padding & Margin #####
+
+$pd-xs-sides: 0 30px;
+$pd-xs-home-cards: 25px;
+$pd-xs-home-topics: 20px;
+$pd-xs-form-cards: 30px;
+
+// ##### - ##### - Medium Devices ##### - ##### -
+
+// ##### Fonts ##### 
+
+$fs-med-dev-small: 1.3rem;
+$fs-med-dev-copy: 1.6rem; // Copy - Buttons - Placeholders
+$fs-med-dev-main-title: 2.8rem;
+$fs-med-dev-medium-title: 2rem;
+
+// ##### Padding & Margin ##### 
+
+$pd-med-sides: 0 50px;
+
+
+// ##### - ##### - Large Devices ##### - ##### 
+
+// ##### Fonts ##### 
+
+$fs-mobile-copy: 1.6rem; // Copy - Buttons - Placeholders
+$fs-mobile-main-title: 3.2rem;
+$fs-mobile-medium-title: 2.4rem;
+
+// ##### Padding & Margin ##### 
+
+$pd-large-sides: 0 100px;
+$pd-home-cards: 34px;
+$pd-form-cards: 40px;
+
+/* ##### ##### ##### ##### ##### ##### ##### */
+
+
+// ##### - ##### - X Large Devices ##### - ##### 
+
+// ##### Fonts ##### 
+
+$fs-xlarge-dev-copy: 1.8rem; // Copy - Buttons - Placeholders
+$fs-xlarge-dev-main-title: 3.6rem;
+$fs-xlarge-dev-medium-title: 2.6rem;
+
+// ##### Padding & Margin ##### 
+
+$pd-xlarge-sides: 0 130px;
+$pd-xlarge-home-cards: 34px;
+$pd-xlarge-form-cards: 40px;
+
+/* ##### ##### ##### ##### ##### ##### ##### */

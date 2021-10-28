@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="dist/css/main.css">
+    <!-- Stylesheet -->
+
+    <title>Home | Curso Práctico de JavaScript</title>
+</head>
+<body>
+
+    <header class="header">
+        <img src="images/logo.png" alt="" class="header__logo">
+
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list--item">
+                    <a href="home.html" id="current-page">Home</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="geometry.html">Geometry</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="discount.html">Discount</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="av-mo-med.html">Average - Mode - Median</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="salaries.html">Salaries</a>
+                </li>
+            </ul>
+
+            <ul class="nav__list-mobile">
+                <li class="nav__list-mobile--item">
+                    <a href="home.html" id="current-page">Home</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="geometry.html">Geometry</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="discount.html">Discount</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="av-mo-med.html">Average - Mode - Median</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="salaries.html">Salaries</a>
+                </li>
+
+                <p>Designed by <span>Alan Flores</span> - Platzi 💚</p>
+
+            </ul>
+            
+        </nav>
+        
+        <button class="header__hamb-menu" id="hamb-menu">
+            <img src="images/hamb-menu.svg" alt="" class="hamb">
+            <img src="images/close-menu.svg" alt="" class="close">
+        </button>
+        
+    </header>
+    
+    <div class="nav-overlay"></div>
+
+    <main class="ho-main">
+        <section class="ho-main__introduction">
+            <h1 class="ho-main__introduction--title">
+                Curso Práctico de <span class="js-span">JavaScript</span>
+            </h1>
+            <p class="ho-main__introduction--copy">
+                Proyecto del Curso Práctico de JavaScript, el cuál consta permite realizar operaciones geométricas, el segundo calcula descuentos de acuerdo a un precio y un porcentaje específico, el tercero calcula promedios, modas y medianas y el último nos permite obtener la mediana de un rango determinado de sueldos.
+            </p>
+        </section>
+
+        <section class="ho-main__cards">
+            <article class="ho-card">
+                <h3 class="ho-card__title">Geometry</h3>
+                <p class="ho-card__copy">La calculadora geométrica permite obtener perímetro y área de cuadrados, triángulos y círculos</p>
+                <a href="geometry.html" class="ho-card__button">Calcular</a>
+            </article>
+            <article class="ho-card">
+                <h3 class="ho-card__title">Descuentos</h3>
+                <p class="ho-card__copy">Esta calculadora permite obtener el precio de un producto con un determinado descuento.</p>
+                <a href="discount.html" class="ho-card__button">Calcular</a>
+            </article>
+            <article class="ho-card">
+                <h3 class="ho-card__title">Promedio, Moda, Mediana</h3>
+                <p class="ho-card__copy">Esta calculadora nos permite obtener el promedio, la moda y la mediana de cualquier grupo de números.</p>
+                <a href="av-mo-med.html" class="ho-card__button">Calcular</a>
+            </article>
+            <article class="ho-card">
+                <h3 class="ho-card__title">Mediana de salarios</h3>
+                <p class="ho-card__copy">Con esta calculadora podemos obtener la mediana entre un número determinado de salarios diferentes.</p>
+                <a href="salaries.html" class="ho-card__button">Calcular</a>
+            </article>
+        </section>
+
+        <hr class="divider">
+
+        <section class="ho-topics">
+            <h3 class="ho-topics__title">Temas tratados en el curso</h3>
+
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions" target="_BLANK"" class="ho-topics-link">
+                <article class="ho-topics-link__container">
+                <img src="images/world.svg" class="ho-topics-link__container--world" alt="">
+                <h3 class="ho-topics-link__container--title">Funciones</h3>
+                <p>https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Functions</p>
+                <img src="images/external.svg" alt="" class="ho-topics-link__container--external">
+                </article>
+            </a>
+
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array" target="_BLANK" class="ho-topics-link">
+                <article class="ho-topics-link__container">
+                <img src="images/world.svg" class="ho-topics-link__container--world" alt="">
+                <h3 class="ho-topics-link__container--title">Arrays</h3>
+                <p>https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array</p>
+                <img src="images/external.svg" alt="" class="ho-topics-link__container--external">
+                </article>
+            </a>
+
+            <a href="https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object" target="_BLANK" class="ho-topics-link">
+                <article class="ho-topics-link__container">
+                <img src="images/world.svg" class="ho-topics-link__container--world" alt="">
+                <h3 class="ho-topics-link__container--title">Objetos</h3>
+                <p>https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Object</p>
+                <img src="images/external.svg" alt="" class="ho-topics-link__container--external">
+                </article>
+            </a>
+
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <p>Designed by <span>Alan Flores</span> - Platzi 💚</p>
+    </footer>
+
+    <script src="/app/js/animations.js"></script>
+
+    </body>
+
+</html>

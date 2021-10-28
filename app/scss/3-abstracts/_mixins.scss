@@ -1,0 +1,105 @@
+@use '../3-abstracts/colors' as *;
+@use '../3-abstracts/variables' as *;
+@use '../3-abstracts/breakpoints' as *;
+
+
+/* ########## Mixins  ##########
+
+#
+#
+
+*/
+
+@mixin ho-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: $pd-xs-home-cards;
+    margin-bottom: $mb-small-separation;
+    border-radius: $br-general;
+    background-color: $clr-background-blue;
+    box-shadow: 0px 0px 10px $clr-shadow-blue;
+    overflow: hidden;
+
+    &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 5px;
+        border-radius: $br-general;
+        background-color: $clr-main-green;
+    }
+
+    @include medium-dev {
+        margin-bottom: $mb-medium-separation;
+    }
+
+    @include large-dev {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 0;
+    }
+
+    
+}
+
+@mixin ho-card-btn {
+    width: 120px;
+    padding: 8px;
+    margin: 0 auto;
+    border-radius: $br-general;
+    border: none;
+    color: $clr-very-dark-blue;
+    background-color: $clr-main-green;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: $fs-xs-mobile-copy;
+    font-weight: 500;
+    cursor: pointer;
+    transition: $tr-anim-duration;
+
+    &:hover {
+        background-color: $clr-secondary-green;
+    }
+
+    @include medium-dev {
+        font-size: $fs-med-dev-copy;
+    }
+}
+
+@mixin ho-topics-link {
+    display: grid;
+    grid-template-columns: 25px auto 25px;
+    grid-template-rows: repeat(2, 1fr);
+    padding: $pd-xs-home-topics;
+    margin-bottom: $mb-very-small-separation;
+    background-color: $clr-background-blue;
+    box-shadow: 0px 0px 10px $clr-shadow-blue;
+    border-radius: $br-general;
+    overflow: auto;
+}
+
+@mixin geo-forms__card {
+    padding: $pd-xs-form-cards;
+    background-color: $clr-background-blue;
+    border-radius: $br-general;
+    margin-bottom: $mb-small-separation;
+
+    @include medium-dev {
+        margin-bottom: $mb-medium-separation;
+    }
+
+    @include large-dev {
+        margin-bottom: 0;
+    }
+}
+
+@mixin input-submit-btn {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: calc($br-general / 2);
+}

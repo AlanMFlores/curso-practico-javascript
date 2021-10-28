@@ -1,0 +1,45 @@
+@use '../3-abstracts/colors' as *;
+@use '../3-abstracts/variables' as *;
+@use '../3-abstracts/breakpoints' as *;
+
+/* ########## Main Stlyes  ##########
+
+#
+#
+
+*/
+
+.main {
+    margin-top: $mt-big-separation;
+    padding: $pd-xs-sides;
+
+    @include medium-dev {
+        margin-top: calc($mb-medium-separation * 2);
+        padding: $pd-med-sides;
+    }
+
+    @include large-dev {
+        padding: $pd-large-sides;
+    }
+
+    &__title {
+        margin-bottom: $mb-small-separation;
+        text-align: center;
+
+        @include medium-dev {
+            margin-bottom: $mb-medium-separation;
+        }
+    }
+
+    &__copy {
+        margin-bottom: $mb-medium-separation;
+        text-align: center;
+
+        @include medium-dev {
+            margin-bottom: $mt-big-separation;
+        }
+    }
+
+
+}
+

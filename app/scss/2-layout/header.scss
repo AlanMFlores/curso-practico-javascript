@@ -1,0 +1,168 @@
+@use '../3-abstracts/colors' as *;
+@use '../3-abstracts/variables' as *;
+@use '../3-abstracts/breakpoints' as *;
+
+/* ########## Header Stlyes  ##########
+
+#
+#
+
+*/
+
+.header {
+    position: relative;
+    z-index: 20;
+    display: flex;
+    height: 60px;
+    padding: $pd-xs-sides;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $clr-background-dark-blue;
+    box-shadow: 1px 1px 5px $clr-very-dark-blue;
+
+    @include medium-dev {
+        padding: $pd-med-sides;
+    }
+
+    @include large-dev {
+        padding: $pd-large-sides;
+        height: 80px;
+    }
+
+    &__logo {
+        width: 100px;
+
+        @include large-dev {
+            width: 120px;
+        }
+    }
+    
+    &__hamb-menu {
+        display: block;
+        height: 30px;
+        background-color: transparent;
+        border: none;
+
+        @include large-dev {
+            display: none;
+        }
+
+    }
+
+}
+
+.hamb {
+    width: 30px;
+    height: 20px;
+}
+
+.close {
+    display: none;
+    width: 30px;
+    height: 20px;
+}
+
+// ##### Nav Menu ##### 
+
+.nav {
+    margin: 0 auto;
+}
+
+.nav__list {
+    display: none;
+
+    @include large-dev{
+        display: block;
+    }
+
+    &--item {
+        display: inline-block;
+        margin-inline-end: 25px;
+
+        a {
+            color: $clr-very-light;
+            font-size: $fs-med-dev-copy;
+            transition: $tr-anim-duration;
+
+            &:hover {
+                color: $clr-main-green;
+            }
+        }
+    }
+}
+
+.nav__list-mobile {
+    position: absolute;
+    z-index: 20;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 50px 25px;
+    margin: 0;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-color: $clr-very-dark-blue;
+    transform: translateY(-120%);
+    transition: $tr-anim-duration;
+
+    &--item {
+        list-style: none;
+        text-align: center;
+        margin-bottom: 50px;
+
+        a {
+            font-size: $fs-xlarge-dev-copy;
+            font-weight: 500;
+            color: $clr-very-light;
+        }
+    }
+
+    &--logo {
+        width: 100px;
+    }
+
+    span {
+        color: $clr-main-green;
+        font-weight: 500;
+    }
+
+}
+
+.nav-overlay {
+    visibility: hidden;
+    position: fixed;
+    z-index: 10;
+    top: 0px;
+    left: 0;
+    background-color: $clr-very-dark-blue;
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    transition: $tr-anim-duration;
+}
+
+
+// ##### Helpers #####
+
+.show-menu {
+    transform: translateY(0);
+}
+
+.show-overlay {
+    visibility: visible;
+}
+
+#current-page {
+    color: $clr-main-green;
+}
+
+.show-x {
+    display: block;
+}
+
+.hide-hamb {
+    display: none;
+}

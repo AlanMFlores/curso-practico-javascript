@@ -1,0 +1,26 @@
+/* ########## Partials  ##########
+
+#
+#
+
+*/
+
+@use '1-base/base';
+@use '2-layout/layout';
+@use '4-components/components';
+@use '5-pages/pages';
+
+/* ########## Main Styles  ##########
+
+#
+#
+
+*/
+
+@use '3-abstracts/colors' as *;
+
+body {
+    background: $clr-background-dark-blue;
+    background-repeat: no-repeat;
+    color: $clr-very-light;
+}

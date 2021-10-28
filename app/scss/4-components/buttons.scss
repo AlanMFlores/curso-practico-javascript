@@ -1,0 +1,53 @@
+@use '../3-abstracts/colors' as *;
+@use '../3-abstracts/variables' as *;
+@use '../3-abstracts/mixins' as *;
+@use '../3-abstracts/breakpoints' as *;
+
+/* ########## Buttons Styles   ##########
+
+#
+#
+
+*/
+
+// ##### Home Cards Buttons
+
+.ho-card__button {
+    @include ho-card-btn
+}
+
+.green-submit-btn {
+    @include input-submit-btn;
+    margin-bottom: calc($mb-very-small-separation / 2);
+    background-color: $clr-main-green;
+    color: $clr-very-dark-blue;
+    font-size: $fs-xs-mobile-copy;
+    font-weight: 600;
+    cursor: pointer;
+
+    @include medium-dev {
+        font-size: $fs-med-dev-copy;
+    }
+}
+
+.blue-submit-btn {
+    @extend .green-submit-btn;
+    background-color: $clr-secondary-blue;
+    color: $clr-very-light;
+}
+
+.form-input {
+    @include input-submit-btn;
+    padding-left: 15px;
+    margin-bottom: $mb-very-small-separation;
+    font-size: $fs-xs-mobile-copy;
+    font-family: 'Roboto', sans-serif;
+
+    &:focus {
+        outline: 2px solid $clr-very-dark-gray
+    }
+
+    @include medium-dev {
+        font-size: $fs-med-dev-copy;
+    }
+}

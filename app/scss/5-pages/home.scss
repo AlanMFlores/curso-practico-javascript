@@ -1,0 +1,83 @@
+@use '../3-abstracts/colors' as *;
+@use '../3-abstracts/variables' as *;
+@use '../3-abstracts/mixins' as *;
+@use '../3-abstracts/breakpoints' as *;
+
+
+/* ########## Home - Styles   ##########
+
+#
+#
+
+*/
+
+.ho-main {
+    margin-top: $mt-big-separation;
+    padding: $pd-xs-sides;
+
+    @include medium-dev {
+        margin-top: calc($mb-medium-separation * 2);
+        padding: $pd-med-sides;
+    }
+
+    @include large-dev {
+        margin-top: calc($mb-medium-separation * 2);
+        padding: $pd-large-sides;
+    }
+
+    @include x-large-dev {
+        padding: $pd-xlarge-sides;
+    }
+
+    &__introduction {
+        text-align: center;
+
+        &--title {
+            margin-bottom: $mb-small-separation;
+
+            @include medium-dev {
+                margin-bottom: $mb-medium-separation;
+            }
+        }
+
+        &--copy {
+            margin-bottom: $mb-medium-separation;
+
+            @include medium-dev {
+                margin-bottom: $mt-big-separation;
+            }
+        }
+    }
+
+    &__cards {
+        @include large-dev {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: $mt-big-separation;
+        }
+    }
+}
+
+.js-span {
+    color: $clr-yellow-js;
+    font-weight: 800;
+}
+
+.ho-topics {
+    margin-bottom: $mb-medium-separation;
+
+    @include medium-dev {
+        margin-bottom: calc($mb-medium-separation * 2);
+    }
+
+    &__title {
+        margin-top: $mb-very-small-separation;
+        margin-bottom: $mb-small-separation;
+
+        @include medium-dev {
+            margin-top: $mb-small-separation;
+            margin-bottom: $mb-medium-separation;
+        }
+    }
+}

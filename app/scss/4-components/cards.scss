@@ -1,0 +1,162 @@
+@use '../3-abstracts/colors' as *;
+@use '../3-abstracts/variables' as *;
+@use '../3-abstracts/mixins' as *;
+@use '../3-abstracts/breakpoints' as *;
+
+/* ########## Cards Styles   ##########
+
+#
+#
+
+*/
+
+// ##### - Home Cards - ######
+
+.ho-card {
+    @include ho-card;
+
+    &__title {
+        margin-bottom: $mb-very-small-separation;
+    }
+
+    &__copy {
+        margin-bottom: $mb-very-small-separation;
+    }
+
+    &:nth-last-child(1) {
+        margin-bottom: $mb-medium-separation;
+
+        @include large-dev {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.ho-topics-link__container {
+    @include ho-topics-link;
+
+    @include medium-dev {
+        margin-bottom: $mb-small-separation;
+    }
+
+    &--world {
+        width: 15px;
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        place-self: center;
+    }
+
+    &--title {
+        margin-left: 20px;
+        align-self: center;
+        grid-column: 2 / 3;
+        color: $clr-very-light;
+    }
+
+    p {
+        grid-column: 1 / 4;
+        grid-row: 2 / 3;
+        margin-top: calc($mb-very-small-separation / 2);
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+    }
+
+    &--external {
+        width: 15px;
+        grid-row: 1 / 2;
+        grid-column: 3 / 4;
+        place-self: center;
+    }
+
+}
+
+.forms-card {
+    @include geo-forms__card;
+
+    &__title {
+        margin-bottom: $mb-very-small-separation
+    }
+
+    &__instruction {
+        margin-bottom: calc($mb-very-small-separation / 2);
+
+        @include medium-dev {
+            font-size: $fs-med-dev-copy;
+        }
+    }
+
+    &:nth-last-child(1) {
+        margin-bottom: $mt-big-separation;
+
+        @include medium-dev {
+            margin-bottom: calc($mb-medium-separation * 2);
+        }
+
+        @include large-dev {
+            margin-bottom: 0;
+        }
+    }
+
+    &__result {
+        display: none;
+        text-align: center;
+        margin-top: calc($mb-medium-separation - 5px);
+    }
+
+    &__saving {
+        @extend .forms-card__result
+    }
+
+}
+
+.result {
+    margin-top: $mb-small-separation;
+    font-size: $fs-xs-mobile-main-title;
+    font-weight: 600;
+    color: $clr-main-green;
+}
+
+.saving {
+    @extend .result;
+    color: $clr-secondary-blue;
+}
+
+.coupons {  
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 40px);
+    place-items: center;
+    gap: 5px;
+    margin-bottom: $mb-very-small-separation;
+    
+    &__buttons {
+        display: grid;
+        width: 100%;
+        height: 100%;
+        place-content: center;
+        color: $clr-very-light;
+        background-color: $clr-secondary-blue;
+        border: none;
+        font-size: $fs-xs-mobile-copy;
+        font-weight: 500;
+        cursor: pointer;
+
+        &:nth-last-child(1) {
+            grid-column: 3 / 4;
+            grid-row: 3 / 4;
+        }
+
+        &:nth-last-child(2) {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+
+    }
+}
+
+// ##### Helpers #####
+
+.show-result {
+    display: block;
+}

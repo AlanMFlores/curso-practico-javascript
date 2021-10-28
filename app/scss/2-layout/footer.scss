@@ -1,0 +1,32 @@
+@use '../3-abstracts/colors' as *;
+@use '../3-abstracts/variables' as *;
+@use '../3-abstracts/breakpoints' as *;
+
+/* ########## Footer Stlyes  ##########
+
+#
+#
+
+*/
+
+.footer {
+    display: grid;
+    place-items: center;
+    height: 70px;
+    background-color: $clr-very-dark-blue;
+    box-shadow: 1px 1px 5px $clr-very-dark-blue;
+
+    p {
+        font-size: $fs-xs-mobile-small;
+
+        @include medium-dev {
+            font-size: $fs-med-dev-small;
+        }
+    }
+    
+    span {
+        color: $clr-main-green;
+        font-weight: 800;
+    }
+    
+}

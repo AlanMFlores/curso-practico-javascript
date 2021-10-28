@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- StyleSheet -->
+    <link rel="stylesheet" href="dist/css/main.css">
+    <!-- StyleSheet -->
+
+    <title>Geometría | Curso Práctico de JavaScript</title>
+</head>
+<body>
+    
+    <header class="header">
+        <img src="images/logo.png" alt="" class="header__logo">
+        
+        <nav class="nav">
+            <ul class="nav__list">
+                <li class="nav__list--item">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="geometry.html" id="current-page">Geometry</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="discount.html">Discount</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="av-mo-med.html">Average - Mode - Median</a>
+                </li>
+                <li class="nav__list--item">
+                    <a href="salaries.html">Salaries</a>
+                </li>
+            </ul>
+
+            <ul class="nav__list-mobile">
+                <li class="nav__list-mobile--item">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="geometry.html" id="current-page">Geometry</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="discount.html">Discount</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="av-mo-med.html">Average - Mode - Median</a>
+                </li>
+                <li class="nav__list-mobile--item">
+                    <a href="salaries.html">Salaries</a>
+                </li>
+
+                <p>Designed by <span>Alan Flores</span> - Platzi 💚</p>
+
+            </ul>
+            
+        </nav>
+        
+        <button class="header__hamb-menu" id="hamb-menu">
+            <img src="images/hamb-menu.svg" alt="" class="hamb">
+            <img src="images/close-menu.svg" alt="" class="close">
+        </button>
+
+    </header>
+    
+    <div class="nav-overlay"></div>
+
+    <main class="main">
+        <h1 class="main__title">
+            Calculadora Geometría
+        </h1>
+
+        <p class="main__copy">
+            Indique las medidas necesarias para calcular el perímetro y el área de la forma deseada.
+        </p>
+
+        <section class="geo-forms">
+
+            <article class="forms-card">
+                <h3 class="forms-card__title">Cuadrado</h3>
+                <form action="">
+                    <label for="sq-sides" class="forms-card__instruction">Indique cuánto miden los lados de su cuadrado</label>
+                    <input type="number" id="sq-sides" class="form-input" placeholder="Indicar aquí la medida">
+                    <input type="button" value="Calcular Perímetro" id="calc-sq-perimeter" class="green-submit-btn">
+                    <input type="button" value="Calcular Área" id="calc-sq-area" class="blue-submit-btn">
+                </form>
+
+                <div class="forms-card__result" id="sq-block-result">
+                    <p id="sq-paragraph">El perímetro del cuadrado es de:</p>
+                    <p class="result" id="sq-result"></p>
+                </div>
+            </article>
+
+            <article class="forms-card">
+                <h3 class="forms-card__title">Triángulo</h3>
+                <form action="">
+                    <label for="tr-side-one" class="forms-card__instruction">Indique cuánto mide el lado uno de su triángulo.</label>
+                    <input type="number" id="tr-side-one" class="form-input" placeholder="Indicar aquí la medida">
+                    <label for="sides" class="forms-card__instruction">Indique cuánto mide el lado dos de su triángulo.</label>
+                    <input type="number" id="tr-side-two" class="form-input" placeholder="Indicar aquí la medida">
+                    <label for="sides" class="forms-card__instruction">Indique cuánto mide la base de su triángulo.</label>
+                    <input type="number" id="tr-side-base" class="form-input" placeholder="Indicar aquí la medida">
+                    <input type="button" value="Calcular Perímetro" id="calc-tr-perimeter" class="green-submit-btn">
+                    <input type="button" value="Calcular Área" id="calc-tr-area" class="blue-submit-btn">
+                </form>
+
+                <div class="forms-card__result" id="tr-block-result">
+                    <p id="tr-paragraph">El perímetro del triángulo es de:</p>
+                    <p class="result" id="tr-result">25cm</p>
+                </div>
+
+            </article>
+
+            <article class="forms-card">
+                <h3 class="forms-card__title">Círculo</h3>
+                <form action="">
+                    <label for="sides" class="forms-card__instruction">Indique cuánto es el diámetro de tu círculo.</label>
+                    <input type="number" id="ci-diameter" class="form-input" placeholder="Indicar aquí la medida">
+                    <input type="button" value="Calcular Perímetro" id="calc-ci-perimeter" class="green-submit-btn">
+                    <input type="button" value="Calcular Área" id="calc-ci-area" class="blue-submit-btn">
+                </form>
+
+                <div class="forms-card__result" id="ci-block-result">
+                    <p id="ci-paragraph">El perímetro del círculo es de:</p>
+                    <p class="result" id="ci-result"></p>
+                </div>
+
+            </article>
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer">
+        <p>Designed by <span>Alan Flores</span> - Platzi 💚</p>
+    </footer>
+
+    <script src="/app/js/geometry.js"></script>
+    <script src="/app/js/animations.js"></script>
+
+</body>
+</html>

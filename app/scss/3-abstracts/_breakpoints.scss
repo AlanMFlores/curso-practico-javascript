@@ -1,0 +1,58 @@
+@use '../3-abstracts/variables' as *;
+
+/* ########## Breakpoints ##########
+
+#
+#
+
+*/
+
+// X-Small-Dev - 320px
+@mixin x-small-dev {
+    @media(min-width: #{$bp-x-small-dev}) {
+        @content;
+    }
+}
+
+// Small-Dev - 375px
+@mixin small-dev {
+    @media(min-width: #{$bp-small-dev}) {
+        @content;
+    }
+}
+
+// Small-Dev-Land - 425px
+@mixin small-dev-land {
+    @media(min-width: #{$bp-small-dev-land}) {
+        @content;
+    }
+}
+
+// Medium-Dev - 600px
+@mixin medium-dev {
+    @media(min-width: #{$bp-medium-dev}) {
+        @content;
+    }
+}
+
+// X-Medium-Dev - 768px
+@mixin x-medium-dev {
+    @media(min-width: #{$bp-x-medium-dev}) {
+        @content;
+    }
+}
+
+// Large-Dev - 900px
+@mixin large-dev {
+    @media(min-width: #{$bp-large-dev}) {
+        @content;
+    }
+}
+
+// X-Large-Dev: 1366px
+@mixin x-large-dev {
+    @media(min-width: #{$bp-x-large-dev}) {
+        @content;
+    }
+}
+

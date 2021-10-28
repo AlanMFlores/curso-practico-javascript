@@ -1,0 +1,12 @@
+<svg id="foreign" xmlns="http://www.w3.org/2000/svg" width="21.775" height="22.775" viewBox="0 0 21.775 22.775">
+  <g id="Grupo_110" data-name="Grupo 110" transform="translate(7.918)">
+    <g id="Grupo_109" data-name="Grupo 109">
+      <path id="Trazado_2" data-name="Trazado 2" d="M199.049,0h-7.918a.99.99,0,1,0,0,1.98h5.529L186.472,12.167a.99.99,0,1,0,1.4,1.4L198.06,3.379V8.908a.99.99,0,1,0,1.98,0V.99A.99.99,0,0,0,199.049,0Z" transform="translate(-186.182)" fill="#fafafa"/>
+    </g>
+  </g>
+  <g id="Grupo_112" data-name="Grupo 112" transform="translate(0 4.959)">
+    <g id="Grupo_111" data-name="Grupo 111">
+      <path id="Trazado_3" data-name="Trazado 3" d="M16.826,99.03a.99.99,0,0,0-.99.99v8.908H1.98V95.071h8.908a.99.99,0,1,0,0-1.98H.99a.99.99,0,0,0-.99.99v15.837a.99.99,0,0,0,.99.99H16.826a.99.99,0,0,0,.99-.99v-9.9A.99.99,0,0,0,16.826,99.03Z" transform="translate(0 -93.091)" fill="#fafafa"/>
+    </g>
+  </g>
+</svg>
